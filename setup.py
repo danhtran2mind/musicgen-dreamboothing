@@ -17,7 +17,7 @@ import setuptools
 
 
 _deps = [
-    "transformers",
+    "transformers>=4.52.1",
     "peft",
     "torch",
     "accelerate",
