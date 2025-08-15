@@ -1139,9 +1139,9 @@ def main():
     # Training
     if training_args.do_train:
         # use last checkpoint if exist
-        if last_checkpoint is not None and args.is_resume_from_checkpoint:
+        if last_checkpoint is not None and model_args.is_resume_from_checkpoint:
             checkpoint = last_checkpoint
-        elif os.path.isdir(model_args.model_name_or_path) and args.is_resume_from_checkpoint :
+        elif os.path.isdir(model_args.model_name_or_path) and model_args.is_resume_from_checkpoint :
             checkpoint = model_args.model_name_or_path
         else:
             checkpoint = None
